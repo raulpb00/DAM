@@ -28,19 +28,20 @@ namespace Eje_1
 			Console.Clear();
 			try{
 				Console.Write("Introduce caracteres, '*' para finalizar.\n\tIntroduce un caracter: ");
-				caracter = char.Parse(Console.ReadLine());
-				while (caracter!='*')
+				caracter = Console.ReadKey();				
 				{
-					contador++;
-					caracter = char.ToLower (caracter); // Evitamos diferencia entre mayuscula y minuscula pasando todas las letras a minusculas.
-					if (caracter=='a') a++;
-					else if(caracter=='e') e++;
-					else if(caracter=='i') i++;
-					else if(caracter=='o') o++;
-					else if(caracter=='u') u++;
+					while (caracter.KeyChar != '*')
+					{
+						contador++;
+						if (caracter.KeyChar == 'a' || caracter.KeyChar == 'A') a++;
+						else if (caracter.KeyChar == 'e' || caracter.KeyChar == 'E') e++;
+						else if (caracter.KeyChar == 'i' || caracter.KeyChar == 'I') i++;
+						else if (caracter.KeyChar == 'o' || caracter.KeyChar == 'O') o++;
+						else if (caracter.KeyChar == 'u' || caracter.KeyChar == 'U') u++;
 
-					Console.Write("\tIntroduce otro caracter: ");
-					caracter = char.Parse(Console.ReadLine());
+						Console.Write("\n\tIntroduce otro caracter: ");
+						caracter = Console.ReadKey();
+					}
 				}
 				//Imprimir resultado
 				Imprimir(a,e,i,o,u,contador);
