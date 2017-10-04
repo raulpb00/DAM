@@ -16,7 +16,7 @@ namespace App_Demo1                      //Espacio de Nombre
             Console.WriteLine("===============================");
             Console.WriteLine();
             Console.Write("    Por favor, dime tu nombre: ");                   //Write sólo, deja el cursor después del texto.
-            miNombre = Console.ReadLine();
+            miNombre = Console.ReadLine();                      //Se queda esperando a que introduzcas algo y finalices con Enter. Lo asigna a la variable miNombre.
             Console.WriteLine();
 
             Console.WriteLine("                       ------------------------------");
