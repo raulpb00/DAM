@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App_Demo1
+namespace App_Demo1                      //Espacio de Nombre 
 {
-    class Program
+    class Program                      //Clase
     {
-        static void Main(string[] args)
+        static void Main(string[] args)                //Función MAIN
         {
-            string miNombre = "";
+            string miNombre = "";                   //Declaro la variable miNombre y la inicializo con un string vacío "".
 
-            Console.WriteLine("Me dices tu nombre y lo muestro");
+            Console.WriteLine("Me dices tu nombre y lo muestro");               //WriteLine salta de linea después de escribir.
             Console.WriteLine("===============================");
             Console.WriteLine();
-            Console.Write("    Por favor, dime tu nombre: ");
+            Console.Write("    Por favor, dime tu nombre: ");                   //Write sólo, deja el cursor después del texto.
             miNombre = Console.ReadLine();
             Console.WriteLine();
 
@@ -25,7 +25,7 @@ namespace App_Demo1
             Console.WriteLine("                       ------------------------------");
 
 
-            Console.ReadLine();
+            Console.ReadLine();        //Se queda esperando una entrada por teclado, recibe lo que le metas, pero no hace nada con ello.
         }
     }
 }
