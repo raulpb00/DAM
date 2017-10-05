@@ -1,8 +1,4 @@
- using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using System.Threading;
 
 namespace App_ClaseConsola
@@ -11,8 +7,7 @@ namespace App_ClaseConsola
     {
         static void Main(string[] args)
         {
- 
- 
+            Console.Title = "Tetris Beeps";
             Console.WriteLine("Ahí va la canciónd de Tetris.");
 
             Console.Beep(658, 125);
