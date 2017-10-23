@@ -15,7 +15,7 @@ namespace Eje_1
 		static void Main(string[] args)
 		{
 			// Declaro las variables
-			char caracter = ' ';
+			ConsoleKeyInfo caracter;
 			int a = 0;
 			int e = 0;
 			int i= 0;
